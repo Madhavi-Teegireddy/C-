@@ -1,0 +1,22 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Madhavi-Teegireddy/C-.git"
+  },
+  "author": "Madhavi Tigireddi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Madhavi-Teegireddy/C-/issues"
+  },
+  "homepage": "https://github.com/Madhavi-Teegireddy/C-#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
