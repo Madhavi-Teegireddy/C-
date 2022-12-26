@@ -4,8 +4,8 @@
     min-height: 100vh;
     display: flex;
     background-image: url("./Images/bb.jpg");
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 }
 
 ::-webkit-scrollbar {

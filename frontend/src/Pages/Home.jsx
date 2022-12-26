@@ -1,13 +1,15 @@
 import React from 'react'
 import { Container, Box, Tab, TabList, TabPanel, TabPanels, Tabs, Text,  } from "@chakra-ui/react";
 
+import Login from '../Components/Authentication/Login';
+import SignUp from '../Components/Authentication/SignUp';
 
 
 const Home = () => {
   return (
     <Container maxW="xl" centerContent>
       <Box
-        d='flex'
+        d="flex"
         justifyContent="center"
         p={3}
         bg="#90e0ef"
@@ -16,11 +18,10 @@ const Home = () => {
         borderRadius="lg"
         borderWidth="1px"
       >
-        <Text fontSize="4xl" fontFamily="Work sans" color="black">
-          Talk-A-Tive
-        </Text>
+        <Text fontSize="4xl" fontFamily="Work sans">Talk-A-Tive</Text>
       </Box>
-      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+
+      {/* <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
         <Tabs isFitted variant="soft-rounded" colorScheme={"blue"}>
           <TabList mb="1em">
             <Tab>Login</Tab>
@@ -28,14 +29,14 @@ const Home = () => {
           </TabList>
           <TabPanels>
             <TabPanel>
-              {/* <Login /> */}
+              <Login />
             </TabPanel>
             <TabPanel>
-              {/* <Signup /> */}
+              <SignUp />
             </TabPanel>
           </TabPanels>
         </Tabs>
-      </Box>
+      </Box> */}
     </Container>
   )
 }
