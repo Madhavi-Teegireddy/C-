@@ -21,7 +21,7 @@ const Home = () => {
         <Text fontSize="4xl" fontFamily="Work sans">Talk-A-Tive</Text>
       </Box>
 
-      {/* <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
         <Tabs isFitted variant="soft-rounded" colorScheme={"blue"}>
           <TabList mb="1em">
             <Tab>Login</Tab>
@@ -36,9 +36,10 @@ const Home = () => {
             </TabPanel>
           </TabPanels>
         </Tabs>
-      </Box> */}
+      </Box>
     </Container>
   )
 }
 
 export default Home
+
