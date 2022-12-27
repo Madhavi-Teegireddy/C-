@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <Container maxW="xl" centerContent>
 
-      <Center bg='white' h='20px' color='blue.400' mb="10px" mt="10px" width="100%" p={7} fontSize="2xl" fontWeight={"bold"}>
+      <Center bg='white' borderRadius={"10px"} h='20px' color='blue.400' mb="10px" mt="20px" width="100%" p={7} fontSize="2xl" fontWeight={"bold"}>
       Chit-Chatoo App</Center>
 
       
