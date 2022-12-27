@@ -20,8 +20,10 @@
     "@chakra-ui/react": "^2.4.5",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "colors": "^1.4.0",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
     "framer-motion": "^8.0.2",
     "mongoose": "^6.8.1",
     "nodemon": "^2.0.20"
