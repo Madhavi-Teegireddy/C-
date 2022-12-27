@@ -8,18 +8,8 @@ import SignUp from '../Components/Authentication/SignUp';
 const Home = () => {
   return (
     <Container maxW="xl" centerContent>
-      {/* <Box
-        d="flex"
-        p={3}
-        bg="#90e0ef"
-        w="100%"
-        m="20px 0px 15px 0px"
-        borderRadius="lg"
-        borderWidth="1px"
-      >
-        <Text fontSize="3xl" fontFamily="Work sans" fontWeight={"bold"} color="blue" justifyContent={"center"}>Talk-A-Tive</Text>
-      </Box> */}
-      <Center bg='#CCF5FF' h='20px' color='blue.500' mb="10px" mt="10px" width="100%" p={7} fontSize="2xl" fontWeight={"bold"}>
+
+      <Center bg='white' h='20px' color='blue.400' mb="10px" mt="10px" width="100%" p={7} fontSize="2xl" fontWeight={"bold"}>
       Chit-Chatoo App</Center>
 
       
