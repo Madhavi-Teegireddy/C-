@@ -1,5 +1,6 @@
 
 const asyncHandler = require("express-async-handler");
+const User = require("../model/UserModel");
 
 
 const registerUser = asyncHandler(async () => {
@@ -9,4 +10,6 @@ const registerUser = asyncHandler(async () => {
         resizeBy.status(400);
         throw new Error("Please Enter all the details");
     }
+
+    const userExists = await User;
 })
