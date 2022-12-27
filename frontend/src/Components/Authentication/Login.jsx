@@ -44,7 +44,7 @@ const Login = () => {
       <Button
         colorScheme="blue"
         width="100%"
-        // style={{ marginTop: 15 }}
+        style={{ marginTop: 15 }}
         onClick={submitHandler}
         // isLoading={picLoading}
       >
