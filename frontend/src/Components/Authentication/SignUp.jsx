@@ -1,5 +1,5 @@
 import React from 'react'
-import { FormControl, FormLabel, Input, VStack } from '@chakra-ui/react'
+import { FormControl, FormLabel, Input, InputGroup, VStack } from '@chakra-ui/react'
 import { useState } from 'react'
 
 
@@ -11,15 +11,33 @@ const SignUp = () => {
   const [password, setPassword] = useState();
   const [pic, setPic] = useState();
   const [picLoading, setPicLoading] = useState(false);
+
     return (
-    <VStack spacing={"5px"}>
-      <FormControl>
-        <FormLabel>
+    <VStack spacing={"5px"} color="black">
+      <FormControl id="first-name" isRequired>
+        <FormLabel>Name</FormLabel>
           <Input
           placeholder='Enter Your Name'
           onChange={(e) =>setName(e.target.value)}/>
-        </FormLabel>
       </FormControl>
+
+      <FormControl id="email" isRequired>
+        <FormLabel>Email</FormLabel>
+          <Input
+          placeholder='Enter Your Email'
+          onChange={(e) =>setEmail(e.target.value)}/>
+      </FormControl>
+
+      <FormControl id="password" isRequired>
+        <FormLabel>Password</FormLabel>
+        <InputGroup>
+          <Input
+          type={"password"}
+          placeholder='Enter Password'
+          onChange={(e) =>setEmail(e.target.value)}/>
+          </InputGroup>
+      </FormControl>
+
     </VStack>
   )
 }
