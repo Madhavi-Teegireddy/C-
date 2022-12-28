@@ -147,13 +147,15 @@ import { VStack } from "@chakra-ui/layout";
 import { useToast } from "@chakra-ui/toast";
 import axios from "axios";
 import { useState } from "react";
-import { useHistory } from "react-router";
+// import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
   const [show, setShow] = useState(false);
   const handleClick = () => setShow(!show);
   const toast = useToast();
   // const history = useHistory();
+  const navigate = useNavigate()
 
   const [name, setName] = useState();
   const [email, setEmail] = useState();
@@ -166,7 +168,7 @@ const SignUp = () => {
     setPicLoading(true);
     if (!name || !email || !password || !confirmpassword) {
       toast({
-        title: "Please Fill all the Feilds",
+        title: "Please Fill all the Fields",
         status: "warning",
         duration: 5000,
         isClosable: true,
@@ -185,7 +187,7 @@ const SignUp = () => {
       });
       return;
     }
-    console.log(name, email, password, pic);
+    // console.log(name, email, password, pic);
     try {
       const config = {
         headers: {
@@ -202,7 +204,7 @@ const SignUp = () => {
         },
         config
       );
-      console.log(data);
+      // console.log(data);
       toast({
         title: "Registration Successful",
         status: "success",
@@ -212,7 +214,7 @@ const SignUp = () => {
       });
       localStorage.setItem("userInfo", JSON.stringify(data));
       setPicLoading(false);
-      // history.push("/chats");
+      navigate("/chats");
     } catch (error) {
       toast({
         title: "Error Occured!",
