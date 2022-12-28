@@ -11,6 +11,7 @@ const app= express();
 dotenv.config();
 connectDB();
 
+app.use(express.json())
 
 // get request
 app.get('/', (req,res) => {
