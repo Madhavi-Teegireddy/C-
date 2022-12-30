@@ -65,4 +65,4 @@ const allUsers = asyncHandler(async(req,res)=>{
     console.log(keyword)
 })
 
-module.exports = { registerUser, authUser }
+module.exports = { registerUser, authUser, allUsers }
