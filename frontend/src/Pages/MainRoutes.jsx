@@ -3,7 +3,7 @@ import React from 'react'
 import '../App.css';
 import { Route, Routes } from "react-router-dom";
 
-import Chat from "./Chat";
+import Chat from "./ChatPage";
 import Home from './Home';
 
 const MainRoutes = () => {

@@ -5,7 +5,7 @@ import MyChats from "../Components/MyChats";
 import SideDrawer from "../Components/miscellaneous/SideDrawer";
 import { ChatState } from "../Context/ChatProvider";
 
-const Chat = () => {
+const ChatPage = () => {
   const [fetchAgain, setFetchAgain] = useState(false);
   const { user } = ChatState();
 
@@ -22,4 +22,4 @@ const Chat = () => {
   );
 };
 
-export default Chat;
+export default ChatPage;
