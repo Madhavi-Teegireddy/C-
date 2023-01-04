@@ -141,7 +141,7 @@ function SideDrawer() {
             </Text>
           </Button>
         </Tooltip>
-        <Text fontSize="2xl" fontFamily="Work sans">
+        <Text fontSize="2xl" color="blue.500" fontWeight={"bold"}>
           Chit-Chatoo-App
         </Text>
         <div>
@@ -151,7 +151,7 @@ function SideDrawer() {
                 count={notification.length}
                 effect={Effect.SCALE}
               />
-              <BellIcon fontSize="2xl" m={1} />
+              <BellIcon fontSize="2xl" m={1} color="blue" />
             </MenuButton>
             <MenuList pl={2}>
               {!notification.length && "No New Messages"}
