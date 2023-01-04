@@ -195,15 +195,15 @@ function SideDrawer() {
         <DrawerContent>
           <DrawerHeader borderBottomWidth="1px">Search Users</DrawerHeader>
           <DrawerBody>
-            <Box d="flex" pb={2}>
+            <Center d="flex" pb={2} w="auto">
               <Input
                 placeholder="Search by name or email"
                 mr={2}
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
               />
-              <Button onClick={handleSearch}>Go</Button>
-            </Box>
+              <Button  onClick={handleSearch}>Go</Button>
+            </Center>
             {loading ? (
               <ChatLoading />
             ) : (
