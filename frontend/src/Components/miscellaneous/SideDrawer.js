@@ -1,7 +1,7 @@
 import { Button } from "@chakra-ui/button";
 import { useDisclosure } from "@chakra-ui/hooks";
 import { Input } from "@chakra-ui/input";
-import { Box, Text } from "@chakra-ui/layout";
+import { Box, Center, Text } from "@chakra-ui/layout";
 import {
   Menu,
   MenuButton,
@@ -29,7 +29,7 @@ import ProfileModal from "./ProfileModal";
 import NotificationBadge from "react-notification-badge";
 import { Effect } from "react-notification-badge";
 import { getSender } from "../../config/ChatLogics";
-import UserListItem from "../userAvatar/UserListItem";
+import UserListItem from "../UserAvatar/UserListItem";
 import { ChatState } from "../../Context/ChatProvider";
 
 function SideDrawer() {
@@ -124,7 +124,7 @@ function SideDrawer() {
 
   return (
     <>
-      <Box
+      <Center
         d="flex"
         justifyContent="space-between"
         alignItems="center"
@@ -133,7 +133,7 @@ function SideDrawer() {
         p="5px 10px 5px 10px"
         borderWidth="5px"
       >
-        <Tooltip label="Search Users to chat" hasArrow placement="bottom-end">
+        <Tooltip label="Search Users to chat" hasArrow placement="bottom-end"> 
           <Button variant="ghost" onClick={onOpen}>
             <i className="fas fa-search"></i>
             <Text d={{ base: "none", md: "flex" }} px={4}>
@@ -188,7 +188,7 @@ function SideDrawer() {
             </MenuList>
           </Menu>
         </div>
-      </Box>
+      </Center>
 
       <Drawer placement="left" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
