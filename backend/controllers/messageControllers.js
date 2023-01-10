@@ -18,9 +18,23 @@ var newMessage = {
     chat: chatId,
 };
 
-try{
-    var message = await Message.create
-}catch(error){}
+  try {
+    var message = await Message.create(newMessage);
+
+    message = await message.populate("sender", "name pic").execPopulate();
+    message = await message.populate("chat").execPopulate();
+    message = await User.populate(message, {
+      path: "chat.users",
+      select: "name pic email",
+    });
+
+    await Chat.findByIdAndUpdate(req.body.chatId, { latestMessage: message });
+
+    res.json(message);
+  } catch (error) {
+    res.status(400);
+    throw new Error(error.message);
+  }
 })
 
 module.exports = {
