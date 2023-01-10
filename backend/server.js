@@ -5,6 +5,7 @@ const connectDB = require("./config/db");
 const colors = require("colors");
 const userRoutes = require('./routes/userRoutes');
 const chatRoutes = require('./routes/chatRoutes');
+const messageRoutes = require("./routes/messageRoutes")
 
 const {notFound,errorHandler} = require("./middlewares/errorMiddleware")
 
