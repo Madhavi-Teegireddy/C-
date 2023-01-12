@@ -14,6 +14,10 @@ const MyChats = ({ fetchAgain }) => {
 
   const { selectedChat, setSelectedChat, user, chats, setChats } = ChatState();
 
+  // window.location.reload()
+
+
+
   const toast = useToast();
 
   const fetchChats = async () => {
